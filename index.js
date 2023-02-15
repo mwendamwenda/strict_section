@@ -88,3 +88,23 @@ const yearsUntilRetirement = function (birthYaeh,firstName) {
       console.log(yearsUntilRetirement(1991,'mwenda'));
       console.log(yearsUntilRetirement(1970,'mwenda'));
       console.log(yearsUntilRetirement(1980,'mwenda'));
+
+      //code chellenge
+
+      const calcAverage = (a,b,c) => (a+b+c)/3;
+
+      console.log(calcAverage(3,4,5));
+      const scoreDolphins = calcAverage(44,23,71);
+      const scoreKoalas = calcAverage(65,54,49);
+      console.log(scoreDolphins,scoreKoalas);
+      
+      const checkWinner = function (avgDolphins ,avgKoalas){
+        if(avgDolphins >= 2 * avgKoalas){
+            console.log(`dolphins win the trophy (${avgDolphins} vs ${avgKoalas})`);
+        }else if(avgKoalas >= 2 * avgDolphins){
+            console.log(`koalas wins the trophy (${avgKoalas} vs ${avgDolphins})`);
+        }else{
+            console.log(`no one wins the trophy (${avgDolphins} vs ${avgKoalas})`);
+        }
+      }
+      checkWinner(scoreDolphins,scoreKoalas);
